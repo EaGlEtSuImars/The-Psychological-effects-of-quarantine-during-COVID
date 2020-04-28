@@ -1,0 +1,5 @@
+import os 
+with open("the path of 1278 qualified user name list file", "r") as f:
+	for name in f.readlines():
+		print(name)
+		os.system("scrapy crawl TweetScraper -a query=\"since:2020-02-15 @"+name+" \" -a lang=\"English\" ")
