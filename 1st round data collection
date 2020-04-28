@@ -1,0 +1,11 @@
+%key features 1: day X in quarantine #quarantinelife，X=1, 2, 3, ...,13, 14
+%code
+scrapy crawl TweetScraper -a query="day 2 in quarantine #quarantinelife since:2020-2-15" -a lang="English" -a crawl_user="True"
+
+%key features 2: day X #selfquarantine，X=1, 2, 3, ...,13, 14
+%code
+scrapy crawl TweetScraper -a query="day 2 #selfquarantine since:2020-2-15" -a lang="English" -a crawl_user="True"
+
+%key features 3: isolation day X #selfisolating，X=1, 2, 3, ...,13, 14
+%code
+scrapy crawl TweetScraper -a query="isolation day 2 #selfisolating since:2020-2-15" -a lang="English" -a crawl_user="True"
